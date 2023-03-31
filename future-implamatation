@@ -1,0 +1,42 @@
+/*
+instalation axios => npm install axios = solicitação à API
+
+import React, { useState, useEffect } from 'react';
+import './video.css';
+
+function Video() {
+  const [videoUrl, setVideoUrl] = useState('');
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        'https://api.tiktok.com/aweme/v1/trending/feed/?count=10&max_cursor=0&min_cursor=0&aid=1988',
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.TOKEN_DE_ACESSO}`
+          }
+        }
+      );
+      const data = await response.json();
+      const videoId = data.aweme_list[0].video.play_addr.uri;
+      const videoUrl = `https://api2-16-h2.musical.ly/aweme/v1/play/?video_id=${videoId}&vr_type=0&is_play_url=1&source=PackSourceEnum_PUBLISH&media_type=4`;
+      setVideoUrl(videoUrl);
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <div className='video'>
+      <video className='video__player' controls>
+        <source src={videoUrl} type='video/mp4' />
+      </video>
+    </div>
+  );
+}
+
+export default Video;
+
+
+*/

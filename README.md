@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# README - Projeto Clone TikTok EBAC
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![React badge](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat)](https://reactjs.org/)
+[![JavaScript badge](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white&style=flat)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![CSS badge](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white&style=flat)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Firebase badge](https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=white&style=flat)](https://firebase.google.com/)
 
-## Available Scripts
+Este é um projeto em React para exibição de vídeos em um layout do TikTok. 
+O projeto utiliza o Firebase como banco de dados para armazenamento e recuperação dos vídeos. 
+Esse projeto é criado junto a equipe da EBAC.
 
-In the project directory, you can run:
+## Como utilizar
 
-### `npm start`
+Para executar o projeto, é necessário ter o Node.js instalado na máquina. Em seguida, é preciso clonar o repositório e instalar as dependências do projeto. Para isso, execute os seguintes comandos no terminal:
+`git clone https://github.com/seu-usuario/projeto-videos.git`
+`npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Após a instalação das dependências, crie um projeto no Firebase e adicione as credenciais de acesso ao arquivo `firebase.js` localizado na pasta `config`. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Por fim, execute o projeto com o comando:
+`npm start`
 
-### `npm test`
+## Arquivos alteráveis
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Os arquivos com as estilizações e lógica do projeto podem ser encontrados nas pastas `pages` e `components`. São eles:
 
-### `npm run build`
+- `VideoFooter.css`: estilização do rodapé dos vídeos.
+- `VideoFooter.js`: lógica do rodapé dos vídeos.
+- `VideoSidebar.css`: estilização da barra lateral dos vídeos.
+- `VideoSidebar.js`: lógica da barra lateral dos vídeos.
+- `Video.js`: lógica principal dos vídeos.
+- `video.css`: estilização dos vídeos.
+- `App.js`: lógica principal do aplicativo.
+- `App.css`: estilização principal do aplicativo. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Linguagens utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React
+- JavaScript
+- CSS
+- Firebase
